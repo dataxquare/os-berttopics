@@ -1,0 +1,22 @@
+[tool.poetry]
+name = "berttopics"
+version = "0.1.0"
+description = ""
+authors = ["Manuel Martin Morante <manuzombiesbf1@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.9"
+datasets = "^2.12.0"
+sentence-transformers = "^2.2.2"
+scikit-learn = "^1.2.2"
+bertopic = "^0.15.0"
+
+[tool.poetry.scripts]
+start = "berttopics.main:main"
+test = "berttopics.main:test"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
